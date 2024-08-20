@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-@Preview(showBackground = true)
+
 @Composable
 fun BoxConstraint(
     modifier: Modifier = Modifier
@@ -78,4 +78,10 @@ fun BoxConstraint(
     }
 
 }
-
+@Preview(showBackground = true)
+@Composable
+fun DefaultPreview() {
+    ConstLayputJPCTheme {
+        BoxConstraint()
+    }
+}
